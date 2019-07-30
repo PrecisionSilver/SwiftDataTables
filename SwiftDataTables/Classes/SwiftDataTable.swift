@@ -96,14 +96,14 @@ public class SwiftDataTable: UIView {
         }
     }
     
-    fileprivate(set) var headerViewModels = [DataHeaderFooterViewModel]()
-    fileprivate(set) var footerViewModels = [DataHeaderFooterViewModel]()
-    var rowViewModels = DataTableViewModelContent() {
+    public var headerViewModels = [DataHeaderFooterViewModel]()
+    public var footerViewModels = [DataHeaderFooterViewModel]()
+    public var rowViewModels = DataTableViewModelContent() {
         didSet {
             self.searchRowViewModels = rowViewModels
         }
     }
-    fileprivate var searchRowViewModels: DataTableViewModelContent!
+    public fileprivate var searchRowViewModels: DataTableViewModelContent!
     
     fileprivate var paginationViewModel: PaginationHeaderViewModel!
     fileprivate var menuLengthViewModel: MenuLengthHeaderViewModel!
