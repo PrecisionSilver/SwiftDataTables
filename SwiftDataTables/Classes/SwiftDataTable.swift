@@ -42,7 +42,7 @@ public class SwiftDataTable: UIView {
     }
     
     var options: DataTableConfiguration
-    var currentRowViewModels: DataTableViewModelContent {
+    public var currentRowViewModels: DataTableViewModelContent {
         get {
             return self.searchRowViewModels
         }
