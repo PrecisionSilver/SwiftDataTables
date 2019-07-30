@@ -42,8 +42,6 @@ public class SwiftDataTable: UIView {
     }
     
     var options: DataTableConfiguration
-    
-    //MARK: - Private Properties
     var currentRowViewModels: DataTableViewModelContent {
         get {
             return self.searchRowViewModels
@@ -53,6 +51,7 @@ public class SwiftDataTable: UIView {
         }
     }
     
+    //MARK: - Private Properties
     fileprivate(set) open lazy var searchBar: UISearchBar = {
         let searchBar = UISearchBar()
         searchBar.searchBarStyle = .minimal;
@@ -99,7 +98,7 @@ public class SwiftDataTable: UIView {
     
     fileprivate(set) var headerViewModels = [DataHeaderFooterViewModel]()
     fileprivate(set) var footerViewModels = [DataHeaderFooterViewModel]()
-    fileprivate var rowViewModels = DataTableViewModelContent() {
+    var rowViewModels = DataTableViewModelContent() {
         didSet {
             self.searchRowViewModels = rowViewModels
         }
