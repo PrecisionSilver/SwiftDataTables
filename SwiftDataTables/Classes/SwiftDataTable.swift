@@ -103,7 +103,7 @@ public class SwiftDataTable: UIView {
             self.searchRowViewModels = rowViewModels
         }
     }
-    public fileprivate var searchRowViewModels: DataTableViewModelContent!
+    public var searchRowViewModels: DataTableViewModelContent!
     
     fileprivate var paginationViewModel: PaginationHeaderViewModel!
     fileprivate var menuLengthViewModel: MenuLengthHeaderViewModel!
