@@ -16,7 +16,7 @@ open class DataCellViewModel: VirtualPositionTrackable, CollectionViewCellRepres
     var yPositionRunningTotal: CGFloat?  = nil
     var virtualHeight: CGFloat = 0
     public let data: DataTableValueType
-    var highlighted: Bool = false
+    public var highlighted: Bool = false
     //
     public var stringRepresentation: String {
         return self.data.stringRepresentation
